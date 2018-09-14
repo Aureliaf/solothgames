@@ -1,0 +1,201 @@
+body {
+	font-family: $baseFont;
+	font-size: 18px;
+	color: $darkFont;
+	line-height: 1.44;
+	background-color: $lightBg;
+}
+
+.error-bg {
+	background-color: $darkBg;
+}
+
+p { 
+	margin: 0;
+	padding: 0;
+}
+
+.white {
+	color: #fff;
+}
+
+.purple {
+	color: $purpleFont;
+}
+
+.display {
+	font-family: $displayFont;
+	font-weight: 600;
+	line-height: 1.29;
+}
+
+.black {
+	font-weight: 800;
+}
+
+.gradient {
+	background: #f21893;
+	background: -moz-linear-gradient(45deg, #f21893 0%, #dd3434 100%); 
+	background: -webkit-linear-gradient(45deg, #f21893 0%,#dd3434 100%); 
+	background: linear-gradient(45deg, #f21893 0%,#dd3434 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f21893', endColorstr='#dd3434',GradientType=1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Link & btn
+-------------------------------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/* Titles
+-------------------------------------------------------------*/
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+h1, h2, h4, .title-word {
+	font-family: $displayFont;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+h1 {
+	display: inline-block;
+}
+
+h1, h2, {
+	font-size: 1.953em;
+	margin-bottom: 25px;
+
+	@media (max-width: 500px){
+		font-size: 1.667em;
+	}
+}
+
+h2 {
+	@media (max-width: 979px){
+		font-size: 1.563em;
+	}
+}
+
+h3, h4 {
+	font-size: 1.563em;
+
+	@media (max-width: 979px){
+		font-size: 1.363em;
+	}
+}
+
+h3 {
+	font-weight: 300;
+	margin-bottom: 8px;
+}
+
+h4 {
+	color: $purpleFont;
+	margin-bottom: 25px;
+}
+
+
+/* Sections
+-------------------------------------------------------------*/
+
+.title-word {
+	font-size: 35px;
+
+	@media (max-width: 500px){
+		font-size: 30px;
+	}
+}
+
+.services h3 {
+	color: $darkFont;
+}
+
+.title-about {
+	margin-bottom: 45px;
+}
+
+.name-about {
+	font-size: 1.167em;
+}
+
+
+.title-contact {
+	font-size: 1.556em;
+	margin-bottom: 40px;
+
+	@media (max-width: 979px){
+		font-size: 1.363em;
+	}
+}
+
+.mail {
+	font-size: 1.167em;
+
+	@media (max-width: 979px){
+		font-size: 1.056em;
+	}
+
+	background-color: $purpleFont;
+    background-image: -webkit-linear-gradient(left, $pink 0%, $red 50%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .3s ease-in-out;
+    -webkit-background-clip: text;
+
+	&:hover {
+	    background-position: 0 0;
+	    color: transparent;
+	    transition: .3s ease-in-out;
+	}
+}
+
+
+/*Page projet-------------------------------------------*/
+
+.intro-projet h1 {
+	font-size: 1.953em;
+	margin-bottom: 80px;
+	color: #fff;
+
+	@media (max-width: 500px){
+		font-size: 1.667em;
+		margin-bottom: 40px;
+	}
+}
+
+.intro-projet h2 {
+	font-size: 1.778em;
+	margin-bottom: 25px;
+
+	@media (max-width: 980px){
+		font-size: 1.563em;
+	}
+}
+
+.intro-projet h3 {
+	font-size: 1.389em;
+	margin-bottom: 8px;
+
+	@media (max-width: 980px){
+		font-size: 1.363em;
+	}
+}
+
+.intro-projet p {
+	font-size: 0.722em;
+	text-transform: uppercase;
+	/*color: $lightFont;*/
+	line-height: 1.8;
+	letter-spacing: 1px;
+	opacity: 0.5;
+}

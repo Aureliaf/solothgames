@@ -1,0 +1,317 @@
+/* Animation
+-------------------------------------------------------------*/
+
+.logo-partners__el {
+	position: relative;
+}
+
+.logo-partners__el .f2 {
+    -webkit-animation-delay: -8s; 
+}
+
+.logo-partners__el .f3 {
+    -webkit-animation-delay: -4s; 
+}
+	
+.logo-partners__el:nth-child(odd) .f1 {
+    -webkit-animation-delay: -1s; 
+}
+
+.logo-partners__el:nth-child(odd) .f2 {
+    -webkit-animation-delay: -10s; 
+}
+
+.logo-partners__el:nth-child(odd) .f3 {
+    -webkit-animation-delay: -6s; 
+}
+
+.logo-partners__el img {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-animation-name: fade;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 12s;
+	animation-name: fade;
+	animation-iteration-count: infinite;
+	animation-duration: 12s;
+	width: 179px;
+	max-width: 100%; 
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  33% {
+    opacity: 1; }
+  53% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } 
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  33% {
+    opacity: 1; }
+  53% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } 
+}
+
+
+
+//Bars
+
+.progress-skills {
+	.bar-crea, .bar-methode, .bar-ambition, .bar-raison, .bar-appetit {
+		height: 100%;
+		/*width: 0%;*/
+		background: #f21893;
+		background: -moz-linear-gradient(45deg, #f21893 0%, #dd3434 100%); 
+		background: -webkit-linear-gradient(45deg, #f21893 0%,#dd3434 100%); 
+		background: linear-gradient(45deg, #f21893 0%,#dd3434 100%);
+	}
+
+	//crea
+
+	.bar-crea-johnny {
+		-webkit-animation: creajohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: creajohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 25%;
+		
+
+		@-webkit-keyframes creajohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 25%; }
+		}
+
+		@keyframes creajohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 25%; }
+		}
+	}
+
+	.bar-crea-ambroise {
+		-webkit-animation: creaambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: creaambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 100%;
+		
+
+		@-webkit-keyframes creaambroise {
+		    0% {
+		    	width: 25%; }
+		    100% {
+			    width: 100%; }
+		}
+
+		@keyframes creaambroise {
+		    0% {
+		    	width: 25%; }
+		    100% {
+			    width: 100%; }
+		}
+	}
+
+	//methode
+
+	.bar-methode-johnny {
+		-webkit-animation: methodejohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: methodejohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 100%;
+		
+
+		@-webkit-keyframes methodejohnny {
+		    0% {
+		    	width: 40%; }
+		    100% {
+			    width: 100%; }
+		}
+
+		@keyframes methodejohnny {
+		    0% {
+		    	width: 40%; }
+		    100% {
+			    width: 100%; }
+		}
+	}
+
+	.bar-methode-ambroise {
+		-webkit-animation: methodeambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: methodeambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 40%;
+		
+
+		@-webkit-keyframes methodeambroise {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 40%; }
+		}
+
+		@keyframes methodeambroise {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 40%; }
+		}
+	}
+
+
+	//ambition
+
+	.bar-ambition-johnny {
+		-webkit-animation: ambitionjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: ambitionjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 50%;
+		
+
+		@-webkit-keyframes ambitionjohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 50%; }
+		}
+
+		@keyframes ambitionjohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 50%; }
+		}
+	}
+
+	.bar-ambition-ambroise {
+		-webkit-animation: ambitionambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: ambitionambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 100%;
+		
+
+		@-webkit-keyframes ambitionambroise {
+		    0% {
+		    	width: 50%; }
+		    100% {
+			    width: 100%; }
+		}
+
+		@keyframes ambitionambroise {
+		    0% {
+		    	width: 50%; }
+		    100% {
+			    width: 100%; }
+		}
+	}
+
+
+	//raison
+
+	.bar-raison-johnny {
+		-webkit-animation: raisonjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: raisonjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 100%;
+		
+
+		@-webkit-keyframes raisonjohnny {
+		    0% {
+		    	width: 20%; }
+		    100% {
+			    width: 100%; }
+		}
+
+		@keyframes raisonjohnny {
+		    0% {
+		    	width: 20%; }
+		    100% {
+			    width: 100%; }
+		}
+	}
+
+	.bar-raison-ambroise {
+		-webkit-animation: raisonambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: raisonambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 20%;
+		
+
+		@-webkit-keyframes raisonambroise {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 20%; }
+		}
+
+		@keyframes raisonambroise {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 20%; }
+		}
+	}
+
+
+	//appetit
+
+	.bar-appetit-johnny {
+		-webkit-animation: appetitjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: appetitjohnny 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 90%;
+		
+
+		@-webkit-keyframes appetitjohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 90%; }
+		}
+
+		@keyframes appetitjohnny {
+		    0% {
+		    	width: 100%; }
+		    100% {
+			    width: 90%; }
+		}
+	}
+
+	.bar-appetit-ambroise {
+		-webkit-animation: appetitambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation: appetitambroise 600ms cubic-bezier(.42,.54,.67,.92);
+		animation-iteration-count: 1;
+		width: 100%;
+		
+
+		@-webkit-keyframes appetitambroise {
+		    0% {
+		    	width: 90%; }
+		    100% {
+			    width: 100%; }
+		}
+
+		@keyframes appetitambroise {
+		    0% {
+		    	width: 90%; }
+		    100% {
+			    width: 100%; }
+		}
+	}
+}

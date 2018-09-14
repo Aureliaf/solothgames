@@ -1,0 +1,20 @@
+
+$baseFont: 'Lato', sans-serif;
+$displayFont: 'Proza Libre', sans-serif;
+$darkFont:#7a8899;
+$lightFont: lighten($darkFont, 20%);
+$purpleFont: #3d3560;
+
+$darkBg: #1c1a25;
+$greyBg: #dadadc;
+$lightBg: #f6f6f6;
+
+$pink: #f21893;
+$red: #dd3434;
+
+@import "reset";
+@import 'type';
+@import 'layout';
+@import 'animation';
+
+
